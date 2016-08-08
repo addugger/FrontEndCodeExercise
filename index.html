@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Task Tracker</title>
+<link rel="stylesheet" href="css/tasktracker.css">
+<link rel="stylesheet" href="resources/roboto.css">
+<!-- jQuery is added locally instead of by CDN because the page is supposed to work offline -->
+<script src="resources/jquery-2.2.4.min.js"></script>
+<script src="js/tasktracker.js"></script>
+</head>
+<body>
+<div class="top-outer">
+	<div class="top-inner">
+		<h1>Task Tracker</h1>
+		<h3>v2.0</h3>
+	</div>
+</div>
+<div class="bottom grid">
+	<div class="row">
+		<div class="form-container col-1">
+			<h2>Create a Task</h2>
+			<label>Task Name</label>
+			<input type="text" class="task-name">
+			<label>Date</label>
+			<input type="text" class="task-date">
+			<label>Assigned To</label>
+			<input type="text" class="task-assigned">
+			<input type="submit" class="task-submit">
+		</div>
+		<div class="task-container col-1">
+			<h2>Existing Tasks</h2>
+			<div class="table-div">
+				<table class="task-table"></table>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
